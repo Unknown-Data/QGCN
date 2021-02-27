@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../graph-measures/.idea/graph-measures.iml" filepath="$PROJECT_DIR$/../graph-measures/.idea/graph-measures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/graphs-package.iml" filepath="$PROJECT_DIR$/.idea/graphs-package.iml" />
+    </modules>
+  </component>
+</project>

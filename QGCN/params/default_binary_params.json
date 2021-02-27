@@ -1,0 +1,23 @@
+{
+  "dataset_name": "Mutagen",
+
+  "external": {"file_path": "../data/Mutagenicity_external_data_all.csv",
+    "graph_col": "g_id", "node_col": "node",
+    "embeddings": ["chem"], "continuous": []},
+
+  "graphs_data": {"file_path": "../data/Mutagenicity_all.csv",
+    "graph_col": "g_id", "src_col": "src", "dst_col": "dst", "label_col": "label", "directed": "False",
+    "features": ["DEG", "CENTRALITY", "BFS"], "adjacency_norm": "NORM_REDUCED", "percentage": 1,
+    "standardization": "zscore"},
+
+  "model": {"label_type": "binary", "num_classes": 2, "use_embeddings": "True", "embeddings_dim": [10],
+            "activation": "tanh_", "dropout": 0, "lr": 1e-4, "optimizer": "ADAM_", "L2_regularization": 1e-7, "f": "x1_x0",
+            "GCN_layers": [
+              {"in_dim": "None", "out_dim": 250},
+              {"in_dim": 250, "out_dim": 250}
+              ]
+  },
+
+  "activator" : {"epochs": 1500, "batch_size": 128, "loss_func": "binary_cross_entropy_with_logits_",
+    "train": 0.675, "dev": 0.125, "test": 0.2}
+}

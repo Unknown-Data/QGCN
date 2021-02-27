@@ -1,0 +1,9 @@
+run id,Conversion Time,Feature calculation time
+50_nodes_and_500_edges,1021.0,139051.0
+100_nodes_and_1000_edges,2017.9999999999998,61417.0
+500_nodes_and_5000_edges,10753.0,341512.0
+1000_nodes_and_10000_edges,22318.0,688970.0
+2000_nodes_and_20000_edges,56333.0,1440755.0
+5000_nodes_and_50000_edges,133838.0,3576721.0
+10000_nodes_and_100000_edges,343848.0,7390393.0
+100000_nodes_and_1000000_edges,5104054.0,75194180.0

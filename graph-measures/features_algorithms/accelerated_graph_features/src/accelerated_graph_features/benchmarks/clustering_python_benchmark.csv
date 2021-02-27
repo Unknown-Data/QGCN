@@ -1,0 +1,10 @@
+run id,Feature calculation time
+50_nodes_and_974_edges,7157.0
+100_nodes_and_3977_edges,39433.0
+300_nodes_and_35941_edges,836591.0
+500_nodes_and_99969_edges,4566771.0
+1000_nodes_and_399274_edges,30269784.0
+2000_nodes_and_1599603_edges,250463190.0
+3000_nodes_and_3599293_edges,859043717.0
+4000_nodes_and_6398449_edges,1829694167.0
+5000_nodes_and_9998598_edges,3426696174.0

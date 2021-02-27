@@ -1,0 +1,23 @@
+{
+  "dataset_name": "Grec",
+
+  "external": {"file_path": "../data/GREC_external_data_all.csv",
+    "graph_col": "g_id", "node_col": "node",
+    "embeddings": ["type"], "continuous": ["x", "y"]},
+
+  "graphs_data": {"file_path": "../data/GREC_all.csv",
+    "graph_col": "g_id", "src_col": "src", "dst_col": "dst", "label_col": "label", "directed": "False",
+    "features": ["DEG", "CENTRALITY", "BFS"], "adjacency_norm": "NORM_REDUCED_SYMMETRIC", "percentage": 1,
+    "standardization": "min_max"},
+
+  "model": {"label_type": "multi", "num_classes": 22, "use_embeddings": "True", "embeddings_dim": [10],
+            "activation": "tanh_", "dropout": 0, "lr": 1e-4, "optimizer": "ADAM_", "L2_regularization": 1e-9, "f": "x1_x0",
+            "GCN_layers": [
+              {"in_dim": "None", "out_dim": 250},
+              {"in_dim": 250, "out_dim": 250}
+              ]
+  },
+
+  "activator" : {"epochs": 1500, "batch_size": 32, "loss_func": "cross_entropy_",
+    "train": 0.675, "dev": 0.125, "test": 0.2}
+}
