@@ -49,6 +49,7 @@ Once you have these files, go to `QGCN/QGCN_model/qgcn_activator.py` and run it 
 The datasets can be download here: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets . Notice you will have to change their format to ours. You can see an example data conventor in `datasets -> change_data_format.py`.
 
 ### Important
-Do not change `graph-measures` or `graph-package` directories because they are external directories for calculating different features of graphs.
+1. Do not change `graph-measures` or `graph-package` directories because they are external directories for calculating different features of graphs.
+2. In `QGCN -> QGCN_model -> curr_pwd` change the path to where this repository is located.
 
 Mail address for more information: *********@gmail.com
