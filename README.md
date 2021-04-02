@@ -1,6 +1,6 @@
 # QGCN
 
-QGCN method for graph classification
+QGCN method for Graph Classification
 
 required packages:
 - pytorch (optional use of GPU)
