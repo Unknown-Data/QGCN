@@ -31,7 +31,7 @@ feature.build()
 mx = feature.to_matrix(mtype=np.matrix)
 ```
 
-* Calculate a set of features.
+* Calculate a set of Features.
 
 ```python
 import numpy as np
